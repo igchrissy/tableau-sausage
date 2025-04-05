@@ -1,11 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Analytics Dashboard 📊✨</title>
     <style>
-        /* Gradient Background and Base Styles */
         body {
             margin: 0;
             padding: 0;
@@ -14,8 +12,6 @@
             min-height: 100vh;
             color: #fff;
         }
-
-        /* Header Styles */
         header {
             background: linear-gradient(90deg, #3498db 0%, #2c3e50 20%, #2c3e50 80%, #3498db 100%);
             padding: 2rem;
@@ -23,20 +19,16 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             animation: slideIn 1s ease-out;
         }
-
         h1 {
             margin: 0;
             font-size: 2.5rem;
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
-        /* Navigation */
         nav {
             padding: 1rem;
             background: rgba(255, 255, 255, 0.1);
         }
-
         nav a {
             color: #fff;
             text-decoration: none;
@@ -44,19 +36,15 @@
             font-weight: bold;
             transition: all 0.3s ease;
         }
-
         nav a:hover {
             color: #f1c40f;
             transform: scale(1.1);
         }
-
-        /* Main Content */
         .container {
             max-width: 1200px;
             margin: 2rem auto;
             padding: 0 2rem;
         }
-
         .section {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 15px;
@@ -65,15 +53,12 @@
             backdrop-filter: blur(5px);
             animation: fadeInUp 1s ease-out;
         }
-
         h2 {
             color: #f1c40f;
             border-bottom: 2px solid #fff;
             padding-bottom: 0.5rem;
             margin-top: 0;
         }
-
-        /* Tableau Container */
         .tableau-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -82,7 +67,6 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
         }
-
         .tableau-container iframe {
             position: absolute;
             top: 0;
@@ -91,37 +75,23 @@
             height: 100%;
             border: none;
         }
-
-        /* Fun Elements */
         .emoji-bounce {
             display: inline-block;
             animation: bounce 2s infinite;
         }
-
-        /* Animations */
         @keyframes slideIn {
             from { transform: translateY(-100%); }
             to { transform: translateY(0); }
         }
-
         @keyframes fadeInUp {
-            from { 
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes bounce {
             0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
             40% { transform: translateY(-20px); }
             60% { transform: translateY(-10px); }
         }
-
-        /* Responsive Design */
         @media (max-width: 768px) {
             h1 { font-size: 1.8rem; }
             nav a { margin: 0 0.8rem; }
@@ -134,29 +104,24 @@
         <h1>Data Analytics Hub 📈🚀</h1>
         <p>Unleashing Insights with Style! ✨</p>
     </header>
-
     <nav>
         <a href="#overview">Overview</a>
         <a href="#tableau">Tableau Dashboard</a>
         <a href="#insights">Key Insights</a>
         <a href="#contact">Contact</a>
     </nav>
-
     <div class="container">
         <div class="section" id="overview">
             <h2>Overview <span class="emoji-bounce">👀</span></h2>
             <p>Welcome to our cutting-edge analytics platform! Dive into data like never before with our interactive visualizations and real-time insights. 📊💡</p>
         </div>
-
         <div class="section" id="tableau">
             <h2>Tableau Dashboard <span class="emoji-bounce">🎯</span></h2>
             <p>Explore our featured Tableau visualization below - your gateway to data-driven decisions! 🌟</p>
             <div class="tableau-container">
-                <iframe src="https://public.tableau.com/views/Book1_17438481755230/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
-                        allowfullscreen></iframe>
+                <iframe src="https://public.tableau.com/views/Book1_17438481755230/Dashboard2?:embed=y&:display_count=n&:origin=viz_share_link" allowfullscreen></iframe>
             </div>
         </div>
-
         <div class="section" id="insights">
             <h2>Key Insights <span class="emoji-bounce">💡</span></h2>
             <ul>
@@ -165,15 +130,12 @@
                 <li>Data Stories: Let the numbers speak! 🎤</li>
             </ul>
         </div>
-
         <div class="section" id="contact">
             <h2>Get in Touch <span class="emoji-bounce">📩</span></h2>
             <p>Have questions? Want more data magic? Reach out at analytics@awesome.com! 🌈</p>
         </div>
     </div>
-
     <script>
-        // Smooth Scroll for Navigation
         document.querySelectorAll('nav a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -181,8 +143,6 @@
                 section.scrollIntoView({ behavior: 'smooth' });
             });
         });
-
-        // Add hover effect for sections
         const sections = document.querySelectorAll('.section');
         sections.forEach(section => {
             section.addEventListener('mouseenter', () => {
