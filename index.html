@@ -65,10 +65,15 @@
         .tableau-container {
             position: relative;
             width: 100%;
-            height: 600px; /* Fixed height for better rendering; adjust as needed */
+            height: 800px; /* Increased height to accommodate full dashboard */
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
             overflow: hidden;
+        }
+        tableau-viz {
+            width: 100%;
+            height: 100%;
+            display: block; /* Ensure it fills the container */
         }
         .emoji-bounce {
             display: inline-block;
@@ -91,7 +96,7 @@
             h1 { font-size: 1.8rem; }
             nav a { margin: 0 0.8rem; }
             .container { padding: 0 1rem; }
-            .tableau-container { height: 400px; } /* Adjust for smaller screens */
+            .tableau-container { height: 500px; } /* Adjusted for smaller screens */
         }
     </style>
 </head>
@@ -119,7 +124,7 @@
                              src="https://public.tableau.com/views/Book1_17438481755230/Dashboard2" 
                              width="100%" 
                              height="100%" 
-                             toolbar="hidden" 
+                             toolbar="bottom" 
                              hide-tabs>
                 </tableau-viz>
             </div>
