@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analytics Dashboard 📊✨</title>
+    <title>Bakery Analytics 🍞✨</title>
     <!-- Load Tableau Embedding API v3 -->
     <script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
     <style>
@@ -11,12 +11,12 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #2c3e50, #4b6584);
+            background: linear-gradient(135deg, #2c3e50, #4b6584); /* נשאיר כהה, מתאים לגווני חיטה */
             min-height: 100vh;
             color: #fff;
         }
         header {
-            background: linear-gradient(90deg, #3498db 0%, #2c3e50 20%, #2c3e50 80%, #3498db 100%);
+            background: linear-gradient(90deg, #d4a017 0%, #8b5a2b 20%, #8b5a2b 80%, #d4a017 100%); /* גווני חום-זהב של לחם */
             padding: 2rem;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
@@ -30,19 +30,19 @@
         }
         nav {
             padding: 1rem;
-            background: rgba(255, 255, 255, 0.1);
-            text-align: center; /* מרכז את הכפתורים */
+            background: rgba(255, 235, 205, 0.2); /* גוון ביסקוויט בהיר */
+            text-align: center;
         }
         nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1.5rem; /* שומר על רווח בין הכפתורים */
+            margin: 0 1.5rem;
             font-weight: bold;
             transition: all 0.3s ease;
-            display: inline-block; /* מבטיח שהם יישארו בשורה אחת */
+            display: inline-block;
         }
         nav a:hover {
-            color: #f1c40f;
+            color: #f1c40f; /* צהוב חיטה */
             transform: scale(1.1);
         }
         .container {
@@ -51,7 +51,7 @@
             padding: 0 2rem;
         }
         .section {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 235, 205, 0.15); /* גוון קרם-לחם */
             border-radius: 15px;
             padding: 2rem;
             margin-bottom: 2rem;
@@ -59,7 +59,7 @@
             animation: fadeInUp 1s ease-out;
         }
         h2 {
-            color: #f1c40f;
+            color: #d4a017; /* זהב של קרום לחם */
             border-bottom: 2px solid #fff;
             padding-bottom: 0.5rem;
             margin-top: 0;
@@ -104,23 +104,23 @@
 </head>
 <body>
     <header>
-        <h1>Data Analytics Hub 📈🚀</h1>
-        <p>Unleashing Insights with Style! ✨</p>
+        <h1>Bread Factory Insights 🍞🥖</h1>
+        <p>Baking Data with a Twist! ✨</p>
     </header>
     <nav>
-        <a href="#overview">Overview</a>
-        <a href="#tableau">Tableau Dashboard</a>
-        <a href="#insights">Key Insights</a>
-        <a href="#contact">Contact</a>
+        <a href="#overview">Bakery Overview</a>
+        <a href="#tableau">Production Dashboard</a>
+        <a href="#insights">Baking Trends</a>
+        <a href="#contact">Contact Us</a>
     </nav>
     <div class="container">
         <div class="section" id="overview">
-            <h2>Overview <span class="emoji-bounce">👀</span></h2>
-            <p>Welcome to our cutting-edge analytics platform! Dive into data like never before with our interactive visualizations and real-time insights. 📊💡</p>
+            <h2>Bakery Overview <span class="emoji-bounce">🥐</span></h2>
+            <p>Welcome to our bread factory analytics hub! Discover the art of baking through data, from dough to delicious loaves. 🍞📊</p>
         </div>
         <div class="section" id="tableau">
-            <h2>Tableau Dashboard <span class="emoji-bounce">🎯</span></h2>
-            <p>Explore our featured Tableau visualization below - your gateway to data-driven decisions! 🌟</p>
+            <h2>Production Dashboard <span class="emoji-bounce">🥖</span></h2>
+            <p>Dive into our production stats - track ovens, batches, and more! 🌾✨</p>
             <div class="tableau-container">
                 <tableau-viz id="tableauViz" 
                              src="https://public.tableau.com/views/Book1_17438481755230/Dashboard2" 
@@ -132,16 +132,16 @@
             </div>
         </div>
         <div class="section" id="insights">
-            <h2>Key Insights <span class="emoji-bounce">💡</span></h2>
+            <h2>Baking Trends <span class="emoji-bounce">🍪</span></h2>
             <ul>
-                <li>Trend Analysis: Spot patterns like a pro! 📈</li>
-                <li>Performance Metrics: Measure what matters! ⚡</li>
-                <li>Data Stories: Let the numbers speak! 🎤</li>
+                <li>Popular Breads: What’s rising fast! 🍞</li>
+                <li>Oven Efficiency: Perfecting the bake! 🔥</li>
+                <li>Sales Insights: Fresh data daily! 📈</li>
             </ul>
         </div>
         <div class="section" id="contact">
-            <h2>Get in Touch <span class="emoji-bounce">📩</span></h2>
-            <p>Have questions? Want more data magic? Reach out at analytics@awesome.com! 🌈</p>
+            <h2>Contact Us <span class="emoji-bounce">📬</span></h2>
+            <p>Questions about our bread stats? Reach out at bakery@freshloaf.com! 🌾</p>
         </div>
     </div>
     <script>
